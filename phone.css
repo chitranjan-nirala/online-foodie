@@ -1,0 +1,78 @@
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2{
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/* navigation bar style */
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+/* home style */
+#home{
+    height: 22px;
+    padding: 2px 69px;
+    flex-direction: column;
+}
+#home::before{
+   height: 412px;
+}
+#home p{
+    font-size:px;
+}
+
+/* service style */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    padding: 4px;
+    margin: 2px 0px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    /* background-color: blue; */
+}
+#services .box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+/* client style */
+#client{
+    flex-wrap: wrap;
+}
+#client img{
+    width: 66px;
+    padding: 2px 6px;
+    height: auto;
+}
+/* utitlities classes */
+.h-primary{
+    font-size: 24px;
+}
+.btn{
+    padding: 4px;
+    font-size: 13px;
+
+
+}
+/* contact style */
+#contact-box form{
+    width: 80%;
+}
+.form-group{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+
+}
+button{
+ padding: 8px;
+  border-radius: 20px;
+}
+button:hover{
+   background-color: aqua;
+  
+   }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial_scale=1.0">
+         <title>Menus</title>
+    </head>
+    <body>
+        <h1>Menus</h1>
+<div class="content_img">
+    <img src='http://www.pngimagesfree.com/Food/Indian-Fast-Food/Indian-Food-Samosa_pngimagesfree.com.png' width='100%' height='100%'>
+    <div>samosa chatni</div>
+   </div>
+   <div class="content_img">
+    <img src='http://www.pngimagesfree.com/Food/Indian-Fast-Food/Indian-Food-Samosa_pngimagesfree.com.png' width='100%' height='100%'>
+    <div>Image 2 Text</div>
+   </div>
+   <div class="content_img">
+    <img src='http://www.pngimagesfree.com/Food/Indian-Fast-Food/Indian-Food-Samosa_pngimagesfree.com.png' width='100%' height='100%'>
+    <div>Image 3 Text</div> 
+   </div>
+   <style>
+   /* Parent Container */
+.content_img{
+ position: relative;
+ float: left;
+ margin-right: 10px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+ display: flex;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+ transform: scale(1.1); 
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-color: rgb(220, 205, 187);
+}
+</style>
+    </body>
+</html>

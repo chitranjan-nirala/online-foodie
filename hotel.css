@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  styling navbar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* styling nav bar :logo and image */
+#logo{
+margin: 34px 55px;
+}
+/* img styling */
+#logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+/* nav styling :list styliing */
+#navbar ul{
+    display: flex;
+}
+/* When header is not in viewport we hide it */
+#navbar[data-scroll="out"] {
+    transform: translatey(-100%);
+  }
+  
+  /* When moving up and header we show it */
+  [data-scroll-dir-y="-1"] #navbar{
+    transform: translatey(0);
+  }
+  
+
+#navbar ul li{
+    list-style: none;
+font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 11px;
+
+}
+#navbar ul li a:hover{
+    color: rgb(20, 30, 39);
+    background-color: rgb(21, 95, 137);
+}
+#home{
+     /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center; 
+   align-items:  center;
+    transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
+}
+  
+#home::before{
+    content: "";
+    background-color: rgb(19, 99, 146);
+    position: absolute;
+    background: url(food.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.8;
+}
+
+#home h1{
+    color: rgb(235, 235, 235);
+    text-align: center;
+    font-family: 'Bree serif' ,serif;
+}
+#home p{
+    color: rgb(28, 236, 226);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Square Peg', cursive;
+}
+/* services section */
+#services{
+    /* margin: 3px; */
+    display: flex;
+}
+#services .box
+{
+    border: 2px solid rgb(237, 107, 107);
+    margin: 2px 20px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: bisque;
+    margin-bottom: 20px;
+
+}
+#services .box img{
+    height: 150px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.6rem;
+    padding: 15px;
+}
+.h-secondry{
+    font-size: 2.6rem;
+    padding: 15px;
+    font-family: 'Bree serif' ,serif;
+}
+.btn{
+    padding: 3px;
+    background-color: rgb(237, 107, 107);
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    display:flex;
+}
+/* client section */
+#client-section{
+position: relative;
+}
+#client-section::before{
+    content: "";
+    background-color: rgb(19, 99, 146);
+    position: absolute;
+    background: url(food.jpg);
+    /* top: 0px;
+    left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+height: 140px;
+padding: 34px;
+}
+#client img{
+   height: 70px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(food.jpg) no-repeat center center/cover;
+    /* top: 0px;
+    left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(229, 233, 240);
+    padding: 9px 34px;
+}
